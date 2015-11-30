@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Providers configuration | Glue</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../docs/advanced/swapping-middlewares-handler.html" />
+    
+    
+    <link rel="prev" href="../../docs/advanced/configuration-object.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.2" data-chapter-title="Providers configuration" data-filepath="docs/advanced/providers-configuration.md" data-basepath="../.." data-revision="Mon Nov 30 2015 10:14:38 GMT+0100 (CET)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Basic usage</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="docs/basic/packages-based-applications.html">
+            
+                
+                    <a href="../../docs/basic/packages-based-applications.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Packages-based applications
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="docs/basic/getting-started.html">
+            
+                
+                    <a href="../../docs/basic/getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="docs/basic/routing.html">
+            
+                
+                    <a href="../../docs/basic/routing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Routing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="docs/basic/command-line.html">
+            
+                
+                    <a href="../../docs/basic/command-line.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Command line
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Advanced usage</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="docs/advanced/configuration-object.html">
+            
+                
+                    <a href="../../docs/advanced/configuration-object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        The Configuration object
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="docs/advanced/providers-configuration.html">
+            
+                
+                    <a href="../../docs/advanced/providers-configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Providers configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="docs/advanced/swapping-middlewares-handler.html">
+            
+                
+                    <a href="../../docs/advanced/swapping-middlewares-handler.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Swapping middlewares handler
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> Other informations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="CHANGELOG.html">
+            
+                
+                    <a href="../../CHANGELOG.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Changelog
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="CONTRIBUTING.html">
+            
+                
+                    <a href="../../CONTRIBUTING.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Contributing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="CONDUCT.html">
+            
+                
+                    <a href="../../CONDUCT.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Code of conduct
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="LICENSE.html">
+            
+                
+                    <a href="../../LICENSE.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        License
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+    <a href="../../GLOSSARY.html" class="btn pull-left" aria-label="Glossary"><i class="fa fa-sort-alpha-asc"></i></a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Glue</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="providers-configuration"><a name="providers-configuration" class="plugin-anchor" href="#providers-configuration"><span class="fa fa-link"></span></a>Providers configuration</h1>
+<p>If you want to configure some of the providers that come with Glue, most of the time I recommend you write your own definition and swap ours for yours:</p>
+<pre><code class="lang-php"><span class="token variable">$app</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Glue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">configure<span class="token punctuation">(</span></span><span class="token string">&apos;definitions&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+    <span class="token string">&apos;view&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">new</span> <span class="token class-name">MyTwigDefinition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If however you just want to tweak one setting here and there, most definitions accepts various arguments to configure them in depth. You can look at the definitions themselves to see which options they accept:</p>
+<pre><code class="lang-php"><span class="token keyword">class</span> <span class="token class-name">MonologDefinition</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/**
+     * @var string
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$path</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * @var string
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$filename</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If per example you want to change the filename and path used by Monolog you can like this:</p>
+<pre><code class="lang-php"><span class="token variable">$app</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Glue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setDefinitionProvider<span class="token punctuation">(</span></span><span class="token string">&apos;logging&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">MonologDefinition</span><span class="token punctuation">(</span><span class="token string">&apos;/logs&apos;</span><span class="token punctuation">,</span> <span class="token function">date<span class="token punctuation">(</span></span><span class="token string">&apos;m-d&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token string">&apos;.log&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can see which definition is bound to which provider key through the <code>php console tinker</code> command:</p>
+<pre><code class="lang-bash">$ php console tinker
+Psy Shell v0<span class="token punctuation">.</span>6<span class="token punctuation">.</span>1 <span class="token punctuation">(</span>PHP <span class="token number">5.6</span><span class="token punctuation">.</span>16 &#x2014; cli<span class="token punctuation">)</span> by Justin Hileman
+<span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token property">$config-</span><span class="token operator">&gt;</span>definitions<span class="token punctuation">;</span>
+<span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+     <span class="token string">&quot;assets&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\Twig\WebpackDefinition <span class="token punctuation">{</span>#<span class="token number">12</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;request&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\ZendDiactorosDefinition <span class="token punctuation">{</span>#<span class="token number">13</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;bus&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\TacticianDefinition <span class="token punctuation">{</span>#<span class="token number">14</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;pipeline&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\RelayDefinition <span class="token punctuation">{</span>#<span class="token number">15</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;routing&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\LeagueRouteDefinition <span class="token punctuation">{</span>#<span class="token number">16</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;db&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\EloquentDefinition <span class="token punctuation">{</span>#<span class="token number">17</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;filesystem&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\FlysystemDefinition <span class="token punctuation">{</span>#<span class="token number">18</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;logging&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\MonologDefinition <span class="token punctuation">{</span>#<span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;console&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\Console\SymfonyConsoleDefinition <span class="token punctuation">{</span>#<span class="token number">21</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;views&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\Twig\TwigDefinition <span class="token punctuation">{</span>#<span class="token number">22</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;url&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\Twig\UrlGeneratorDefinition <span class="token punctuation">{</span>#<span class="token number">25</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;debugbar&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\DebugbarDefinition <span class="token punctuation">{</span>#<span class="token number">26</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;migrations&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Madewithlove\Glue\Definitions\Console\PhinxDefinition <span class="token punctuation">{</span>#<span class="token number">27</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token punctuation">]</span>
+</code></pre>
+<p>You can also see which options a definition exposes through the <code>php console config</code> command.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../docs/advanced/configuration-object.html" class="navigation navigation-prev " aria-label="Previous page: The Configuration object"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../docs/advanced/swapping-middlewares-handler.html" class="navigation navigation-next " aria-label="Next page: Swapping middlewares handler"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ungrey/ungrey.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/madewithlove/glue/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/madewithlove/glue"},"anchors":{},"prism":{},"ungrey":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
